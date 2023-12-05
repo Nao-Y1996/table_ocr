@@ -1,14 +1,20 @@
 # OCRによる表データのCSV変換
 
+## 説明
+
+- csvへの出力結果は`src/output.csv`にあります。
+- ソースコードは`src/`にあります。
+- 画像の処理の過程は`src/img/output`にあります。
+
 ## プロジェクト設定
 
- - プロジェクトは`poetry`で管理しているので、`poetry`をインストールしてください。
- - `poetry`のインストール方法は[こちら](https://python-poetry.org/docs/#installation)を参照してください。
- - `poetry`をインストールしたら、以下のコマンドを実行してください。
- - なお、以下で動作確認をしています。（pyproject.tomlを参照）
-     - Python 3.11.5
-     - opencv-python 4.8.1.78
-     - easyocr 1.7.1
+- プロジェクトは`poetry`で管理しているので、`poetry`をインストールしてください。
+- `poetry`のインストール方法は[こちら](https://python-poetry.org/docs/#installation)を参照してください。
+- `poetry`をインストールしたら、以下のコマンドを実行してください。
+- なお、以下で動作確認をしています。（pyproject.tomlを参照）
+  - Python 3.11.5
+  - opencv-python 4.8.1.78
+  - easyocr 1.7.1
 
  ```bash
  cd table_ocr-main # プロジェクトのルートディレクトリに移動
@@ -25,6 +31,7 @@
 cd src
 python main.py
 ```
+
 実行すると、`src/img/table.png`の画像から読み取った表データから作成した`src/output.csv`が作成されます。
 
 また、以下のようにしてデバッグモードで実行できます。
