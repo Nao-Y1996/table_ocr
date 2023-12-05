@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "ocr-practice"
+name = "table_ocr"
 version = "0.1.0"
 description = ""
 authors = ["hachimada"]
